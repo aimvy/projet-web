@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./css/Style2.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="panel">
+            <div id="grid">
+                
+                
+                <div id="head">
+                    <img src="ECE.png" id="logo"><br/>
+
+                </div>
+                
+                
+                
+                <div id="signup">
+                    
+                    <form action="Signup.php" method="post">
+                        
+                        <div class="titles">
+                            <h6>Heureux de vous accueillir!</h6>
+                            <h3>Créez votre compte</h3>
+                        </div>
+                        <div id="noms">
+                            <div class="bordure" id="nom">
+                                <input type="text" name="nom" placeholder="Nom..." class="input" maxlength="50">
+                            </div>
+
+                            <div class="bordure" id="prenom">
+                                <input type="text" name="prenom" placeholder="Prénom..." class="input" maxlength="50">
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="bordure" id="mail">
+                            <input type="text" name="mail" placeholder="Adresse e-mail..." class="input" maxlength="100">
+                        </div>
+                        
+                        <div id="adresses">
+                            
+                            <div class="bordure" id="adresse">
+                                <input type="text" name="adresse" placeholder="Adresse postale..." class="input" maxlength="50">
+                            </div>
+
+                            <div class="bordure" id="adresse2">
+                                <input type="text" name="adresse2" placeholder="Adresse Ligne 2 (optionel)" class="input" maxlength="50">
+                            </div>
+                            
+                        </div>
+                        
+                        <div id="vcp">
+                            
+                            <div class="bordure" id="ville">
+                                <input type="text" name="ville" placeholder="Ville..." class="input" maxlength="50">
+                            </div>
+
+                            <div class="bordure" id="cp">
+                                <input type="number" name="cp" placeholder="Code Postal" class="input" maxlength="50">
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="bordure" id="etu">
+                            <input type="text" name="netu" placeholder="N° de carte d'étudiant..." class="input" maxlength="100">
+                        </div>
+                        
+                        <div class="bordure" id="pass">
+                            <input type="password" name="pass" placeholder="Mot de passe..." class="input" maxlength="50">
+                        </div>
+                        
+                        <div class="bordure" id="repass">
+                            <input type="password" name="repass" placeholder="Répétez le mot de passe..." class="input" maxlength="50">
+                        </div>
+                        
+                            <br/>
+                            <br/>
+                            
+                        <div class="g-recaptcha" data-sitekey="6Le7bBUgAAAAAOf7D5D73SaVp5C6kObsKanoDbh5"></div>
+                        
+                            <br/>
+                        
+                        <button type="submit" class="btn sign" name="submit">Sign Up</button>
+                    </form>
+                    
+
+                    <script src="https://www.google.com/recaptcha/api.js?onload=&render=explicit" async defer></script>
+                </div>
+                
+                
+                <div class="reseau">
+                    <p>> Retrouvez toutes les informations sur nos réseaux sociaux </p>
+                    <a href =""><img src="instagram.png" class="ig"></a>
+                    <a href =""><img src="twitter.png" class="tw"></a>
+                    <a href =""><img src="linkedin.png" class="lk"></a>   <a href =""><img src="facebook.png" class="fb"></a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

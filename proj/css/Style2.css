@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap');
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: white;
+    
+    background: url('../assets/Wave.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Variables */
+:root{
+    --primary-gradient: linear-gradient(to right, #4e4376, #2b5876);
+    --text-color: #F7F9F9;
+    --Montserrat: "Montserrat", cursive;
+    --Lobster: "Lobster", cursive;
+    --primary-shadow: 3px 4px 7px rgba(27, 27, 27, 0.534);
+    --border-color: rgba(0,0,0,0.329);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .panel{
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--primary-shadow);
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7,1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+}
+
+
+
+#logo {
+    margin: 1%;
+    width: 170px;
+    -webkit-filter: drop-shadow(1px 1px 1px black);
+}
+
+
+#head{
+     grid-area: 1 / 1 / 2 / 2; 
+}
+
+
+#signup{
+    grid-area: 2 / 1 / 6 / 2;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+.btn{
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 4rem;
+    background: #2b5876;
+    color: whitesmoke;
+    font-size: .7rem;
+    font-family: var(--Montserrat);
+    box-shadow: var(--primary-shadow);
+    cursor: pointer;
+}
+
+
+
+form .sign{
+    background: var(--primary-gradient);
+    text-align: center;
+    transform: translate(0,-200%);
+}
+
+
+
+form h3{
+    font-family: var(--Montserrat);
+    padding: 0;
+    margin: 0;
+}
+
+h6{
+    font-family: var(--Lobster);
+    color: #444444d2;
+}
+
+form input{
+    width: 90%;
+    background: transparent;
+    border: none;
+    font-family: var(--Montserrat);
+    font-size: .9rem;
+    overflow: hidden;
+}
+
+form{
+    margin-top: -5%;
+    width: 50%;
+    margin-left: 25%;
+}
+
+form .bordure .input{
+    text-align: left;
+    border: 1px solid var(--border-color);
+    border-radius: 3rem;
+    margin: 10px;
+    padding: .5rem 1rem;
+}
+
+
+form input:focus{
+    outline: none;
+}
+
+
+#noms{
+    display: flex;
+}
+
+#nom {
+    transform: translate(55%,3%);
+}
+
+#prenom {
+    transform: translate(70%);
+}
+
+#adresses {
+    display: flex;
+    transform: translate(15%);
+}
+
+#adresse {
+    transform: translate(15%, 4%);
+}
+
+#adresse2 {
+    transform: translate(30%);
+}
+
+#vcp {
+    display: flex;
+    transform: translate(26%);
+}
+
+#ville{
+}
+
+#cp{
+    transform: translate(10%);
+}
+
+#mail {
+    transform: translate(15%,4%);
+}
+
+#etu {
+    transform: translate(33%, 4%);
+}
+
+#pass {
+    transform: translate(42%, 4%);
+}
+
+#repass {
+    transform: translate(46%, 4%);
+}
+
+.reseau{
+    grid-area: 6/ 1 / 8 / 2;
+    padding: 0 1.4rem;
+    font-family: var(--Lobster);
+    color: whitesmoke;
+    position: relative;
+    font-size: .9rem;
+    transform: translate(0, -45%);
+}
+
+.reseau img {
+    width: 30px;
+    height: 30px;
+    text-align: center; 
+    margin-left: 22px;
+    margin-top: 20px;
+}
+
+
+.reseau::after{
+    content: "";
+    position: absolute;
+    left: 14%;
+    width: 50px;
+    border: 1px solid whitesmoke;
+    border-radius: 4rem;
+}
+
+.g-recaptcha {
+    float: right;
+    transform: translate(-2%, -25%);
+}
+
+
